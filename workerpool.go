@@ -3,8 +3,8 @@ package main
 import "fmt"
 import "time"
 
-const numJobs int = 90000
-const numWorkers int = 90000
+const numJobs int = 9
+const numWorkers int = 3
 
 func squarer(id int, jobs <-chan int, results chan<- int) {
 	for j := range jobs {
